@@ -1,0 +1,5 @@
+CREATE TABLE Biblioteczka (
+   id INTEGER, 
+   tytul TEXT, 
+   data_zakupu DATE
+);
