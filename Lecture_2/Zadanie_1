@@ -1,5 +1,4 @@
-/*
-Bazy danych i manipulacja danymi - Zadanie 1
+/* Bazy danych i manipulacja danymi - Zadanie 1
 1. Stwórz bazę danych
 2. Stwórz tabelę nazwaną Biblioteczka z trzema kolumnami:
    ID, który przechowuje typ danych INTEGER
