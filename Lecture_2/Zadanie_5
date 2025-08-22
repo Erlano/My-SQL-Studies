@@ -23,13 +23,6 @@ CREATE TABLE zainteresowania (
 	data_realizacji DATE
 );
 
-CREATE TABLE zainteresowania (
-	id INTEGER PRIMARY KEY AUTO_INCREMENT,
-	nazwa TEXT NOT NULL,
-	opis TEXT,
-	data_realizacji DATE
-);
-
 INSERT INTO zainteresowania (nazwa, opis) VALUES
 ('Budowa komputera PC', 'Złożenie wydajnego komputera do gier i programowania.'),
 ('Nauka języka Python', 'Opanowanie podstaw i stworzenie prostej aplikacji webowej.'),
