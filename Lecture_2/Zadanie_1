@@ -3,3 +3,5 @@ CREATE TABLE Biblioteczka (
    tytul TEXT, 
    data_zakupu DATE
 );
+
+INSERT INTO Biblioteczka (id, tytul, data_zakupu) VALUES (748372, 'Genesis', '2025-07-12');
