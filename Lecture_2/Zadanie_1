@@ -1,7 +1,42 @@
+/*
+1. Stwórz bazę danych
+2. Stwórz tabelę nazwaną Biblioteczka z trzema kolumnami:
+   ID, który przechowuje typ danych INTEGER
+   Tytuł, który przechowuje typ TEXT
+   Data zakupu, która przechowuje typ DATA
+3. Dodaj książkę o Twoim ulubionym tytule do Biblioteczki wraz z pozostałymi danymi.
+4. Sprawdź, czy książka została dodana do bazy danych poprzez jej wyświetlenie.
+5. Dodaj kolejne dwie ulubione książki do Biblioteczki wraz z identyfikatorem (wg. kolejności którą najbardziej lubisz) i pozostałymi danymi.
+6. Zmień ulubioną książkę na książkę, która najmniej Ci się podoba.
+7. Dodaj nową kolumnę o nazwie Autor.
+8. Uzupełnij kolumnę Autor danymi dla każdego rekordu.
+9. Usuń pozycje z ulubionymi książkami.
+10. Wyświetl dane autora dla pozycji, która została w bazie
+*/
+
 CREATE TABLE Biblioteczka (
-   id INTEGER, 
+   id INTEGER PRIMARY KEY, 
    tytul TEXT, 
    data_zakupu DATE
 );
 
-INSERT INTO Biblioteczka (id, tytul, data_zakupu) VALUES (748372, 'Genesis', '2025-07-12');
+INSERT INTO biblioteczka (id, tytul, data_zakupu) VALUES (748372, 'Genesis. Artificial Intelligence, Hope and the Human Spirit', '2025-07-12');
+INSERT INTO biblioteczka (id, tytul, data_zakupu) VALUES (244986, 'Przebudzenie Lewiatana', '2025-05-25');
+INSERT INTO biblioteczka (id, tytul, data_zakupu) VALUES (597634, 'Polska Piastów', '2025-03-04');
+
+UPDATE biblioteczka
+	SET id = 987432,
+    tytul = 'Przestrzeń Objawienia',
+    data_zakupu = '2025-08-15'
+WHERE id = 597634;
+
+ALTER TABLE biblioteczka ADD COLUMN autor TEXT;
+
+UPDATE biblioteczka SET autor = 'Alastair Reynolds' WHERE id = 987432;
+UPDATE biblioteczka SET autor = 'Henry Alfred Kissinger' WHERE id = 748372;
+UPDATE biblioteczka SET autor = 'James S. A. Corey' WHERE id = 244986;
+
+DELETE FROM biblioteczka WHERE id = 244986;
+DELETE FROM biblioteczka WHERE id = 748372;
+
+SELECT * FROM biblioteczka;
