@@ -15,3 +15,33 @@
 9. Sprawdź, czy dane zostały zmienione, wyświetlając je.
 */
 
+CREATE DATABASE lista_pracownikow;
+
+CREATE TABLE pracownicy(
+	id INTEGER PRIMARY KEY auto_increment,
+	imie TEXT,
+	nazwisko TEXT,
+	stanowisko TEXT,
+	dzial TEXT
+);
+
+INSERT INTO pracownicy (imie, nazwisko, stanowisko, dzial) VALUES
+('Karolina', 'Zielińska', 'Lider Zespołu', 'V-Ret'),
+('Mateusz', 'Szymański', 'Magazynier', 'C-Ret'),
+('Jakub', 'Jankowski', 'Operator Wózka', 'WHD'),
+('Natalia', 'Woźniak', 'Specjalista ds. Jakości', 'ICQA'),
+('Paweł', 'Kozłowski', 'Pracownik Sortowni', 'Non-Tech'),
+('Monika', 'Mazur', 'Rozwiązywanie Problemów', 'Problem Solve');
+SELECT * FROM pracownicy;
+
+ALTER TABLE pracownicy ADD COLUMN data_zatrudnienia DATE;
+INSERT INTO pracownicy (id, imie, nazwisko, stanowisko, dzial, data_zatrudnienia) VALUES (7, 'Adam', 'Krajewski', 'Magazynier', 'C-Ret', '2025-07-15');
+SELECT * FROM pracownicy;
+
+UPDATE pracownicy SET data_zatrudnienia = '2022-03-15' WHERE id = 1;
+UPDATE pracownicy SET data_zatrudnienia = '2023-09-01' WHERE id = 2;
+UPDATE pracownicy SET data_zatrudnienia = '2021-11-22' WHERE id = 3;
+UPDATE pracownicy SET data_zatrudnienia = '2023-01-10' WHERE id = 4;
+UPDATE pracownicy SET data_zatrudnienia = '2022-07-30' WHERE id = 5;
+UPDATE pracownicy SET data_zatrudnienia = '2024-02-05' WHERE id = 6;
+SELECT * FROM pracownicy;
