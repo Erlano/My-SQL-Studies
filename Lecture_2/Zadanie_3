@@ -1,0 +1,17 @@
+/* Bazy danych i manipulacja danymi - Zadanie 3
+1. Załóż bazę o nazwie: Lista Prezentów.
+2. Załóż tabelę o nazwie: Prezenty_2020 i utwórz 5 kolumn, a także dobierz i ustaw dla każdej constraints:
+  ID
+  Imię obdarowanego
+  Pomysł na prezent
+  Cena
+  Miejsce zakupu
+3. Wprowadź dane osób, dla których kupujesz świąteczne prezenty (min. 5). Każda pozycja ma mieć wypełnione wszystkie dane zgodnie z wymaganiem.
+4. Sprawdź, czy wszystkie dane wyświetlają się prawidłowo.
+5. Zmień pomysł na prezent dla osoby zapisanej w pozycji 3 na wartość „Rower”.
+6. Sprawdź, czy dane zostały zmienione wyświetlając tylko tę pozycję.
+7. Usuń pozycję 1.
+8. Sprawdź, czy dane zostały zmienione, wyświetlając wszystkie pozycje.
+9. Usuń kolumnę o nazwie Miejsce zakupu.
+10. Wyświetl zawartość kolumny Imię obdarowanego dla pozycji 3,4,5 i sprawdź, czy dane są prawidłowe.
+*/
