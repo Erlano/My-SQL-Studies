@@ -15,3 +15,33 @@
 9. Usuń kolumnę o nazwie Miejsce zakupu.
 10. Wyświetl zawartość kolumny Imię obdarowanego dla pozycji 3,4,5 i sprawdź, czy dane są prawidłowe.
 */
+
+CREATE DATABASE lista_prezentów;
+
+CREATE TABLE prezenty_2020(
+id INTEGER PRIMARY KEY AUTO_INCREMENT,
+imie_obdarowanego TEXT,
+pomysl_na_prezent TEXT,
+cena NUMERIC (10,2),
+miejsce_zakupu TEXT
+);
+
+INSERT INTO Prezenty_2020 (imie_obdarowanego, pomysl_na_prezent, Cena, miejsce_zakupu) VALUES
+('Mama', 'Ciepły szal', 150.00, 'Zalando'),
+('Tata', 'Książka historyczna', 80.00, 'Empik'),
+('Ania', 'Słuchawki bezprzewodowe', 300.00, 'Media Expert'),
+('Piotr', 'Gra planszowa', 120.00, 'Allegro'),
+('Babcia', 'Zestaw herbat', 70.00, 'Czas na Herbatę');
+
+SELECT * FROM prezenty_2020;
+
+update prezenty_2020 SET pomysl_na_prezent = 'Rower' WHERE id = 3;
+select * from prezenty_2020 where id = 3;
+
+delete from prezenty_2020 where id = 1;
+select * from prezenty_2020;
+
+alter table prezenty_2020 drop column miejsce_zakupu;
+select * from prezenty_2020;
+
+select imie_obdarowanego from prezenty_2020 where id in (3, 4, 5);
