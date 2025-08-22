@@ -1,5 +1,4 @@
 /* Bazy danych i manipulacja danymi - Zadanie 2
-
 1. Załóż bazę o nazwie: School_Coding.
 2. Załóż tabelę o nazwie: Mentors i utwórz 6 kolumn, a także dobierz i ustaw dla każdej constraints:
   ID
