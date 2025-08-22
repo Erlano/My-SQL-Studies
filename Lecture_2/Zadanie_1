@@ -14,7 +14,9 @@
 10. Wyświetl dane autora dla pozycji, która została w bazie
 */
 
-CREATE TABLE Biblioteczka (
+CREATE DATABASE books;
+
+CREATE TABLE biblioteczka (
    id INTEGER PRIMARY KEY, 
    tytul TEXT, 
    data_zakupu DATE
