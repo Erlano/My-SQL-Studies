@@ -1,0 +1,20 @@
+/* Bazy danych i manipulacja danymi - Zadanie 2
+
+1. Załóż bazę o nazwie: School_Coding.
+2. Załóż tabelę o nazwie: Mentors i utwórz 6 kolumn, a także dobierz i ustaw dla każdej constraints:
+  ID
+  Imię 
+  Nazwisko
+  Specjalizacja
+  Data zatrudnienia
+  Data zwolnienia
+3. Wprowadź dane (10 pozycji od 1 do 10). Każda pozycja ma mieć wypełnione wszystkie dane).
+4. Sprawdź, czy wszystkie dane wyświetlają się prawidłowo poprzez ich wyświetlenie.
+5. Zmień Nazwisko Mentora w pozycji nr 5.
+6. Sprawdź, czy dane zostały zmienione, wyświetlając tylko tę pozycję.
+7. Zmień specjalizację mentora w pozycji 9.
+8. Sprawdź, czy dane zostały zmienione, wyświetlając tylko tę pozycję.
+9. Dodaj kolumnę o nazwie Wynagrodzenie, a także dobierz i ustaw constraints.
+10. Uzupełnij kolumnę wartością 1000 dla pozycji 1,2 oraz 3.
+11. Wyświetl pozycję 1,2,3 i sprawdź, czy dane są prawidłowe.
+*/
