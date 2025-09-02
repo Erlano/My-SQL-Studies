@@ -35,10 +35,10 @@ INSERT INTO pracownicy (id, imie, nazwisko, wiek, kurs) VALUES
 (19, 'Roman', 'ZIELIŃSKI', 39, 'Tester'),
 (20, 'Ewa', 'WOŹNIAK', 31, 'Tester');
 
-UPDATE pracownicy SET nazwisko = NULL WHERE nr IN (6, 7, 19);
-UPDATE pracownicy SET imie = NULL WHERE nr IN (9, 16);
-UPDATE pracownicy SET kurs = NULL WHERE nr = 11;
-UPDATE pracownicy SET wiek = NULL WHERE nr = 12;
+UPDATE pracownicy SET nazwisko = NULL WHERE id IN (6, 7, 19);
+UPDATE pracownicy SET imie = NULL WHERE id IN (9, 16);
+UPDATE pracownicy SET kurs = NULL WHERE id = 11;
+UPDATE pracownicy SET wiek = NULL WHERE id = 12;
 
 -- Wyświetl listę pracowników w wieku 28 lat.
 SELECT * FROM pracownicy WHERE wiek = 28;
@@ -50,7 +50,7 @@ SELECT * FROM pracownicy WHERE wiek <= 30;
 SELECT * FROM pracownicy WHERE nazwisko LIKE '%ski%';
 
 -- Wyświetl listę pracowników z ID: 1,4,7,18,20.
-SELECT * FROM pracownicy WHERE nr IN (1, 4, 7, 18, 20);
+SELECT * FROM pracownicy WHERE id IN (1, 4, 7, 18, 20);
 
 -- Wyświetl listę pracowników z wprowadzonymi kompletnymi danymi.
 SELECT *
