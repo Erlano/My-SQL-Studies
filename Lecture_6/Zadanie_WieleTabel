@@ -191,6 +191,7 @@ WITH londonstaff AS (
     WHERE a.commission > 0.14
     AND a.working_area = 'London'
 )
+SELECT * FROM londonstaff;
 
 -- b. Utwórz widok „gradecount”, aby uzyskać liczbę klientów dla każdej oceny (‘grade’)
 
@@ -199,6 +200,7 @@ WITH gradecount AS (
     FROM customer AS c
 	GROUP BY c.grade
 )
+SELECT * FROM gradecount;
 
 -- c. Utwórz widok (o nazwie „total_per_dzien”) do śledzenia liczby klientów, średniej kwoty zamówień oraz ogólnej sumy zamówień na każdy dzień
 
@@ -207,3 +209,4 @@ WITH total_per_dzien AS (
     FROM orders AS o
 	GROUP BY o.ord_date
 )
+SELECT * FROM total_per_dzien;
